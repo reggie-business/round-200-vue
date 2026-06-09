@@ -18,8 +18,10 @@ const isMailto = (url: string) => url.startsWith('mailto:')
     class="text-none"
     variant="flat"
     color="primary"
-    :prepend-icon="icon"
   >
+    <template #prepend>
+      <v-icon :icon="icon" class="me-2"></v-icon>
+    </template>
     {{ label }}
   </v-btn>
 </template>
