@@ -74,15 +74,3 @@ const links = [
   background: linear-gradient(135deg, #5b8cff, #8f5bff) !important;
 }
 </style>
-
-@media (max-width: 420px) {
-  .card {
-    padding: 1.75rem;
-  }
-
-  .theme-toggle {
-    top: 1rem;
-    right: 1rem;
-  }
-}
-</style>
