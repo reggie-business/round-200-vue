@@ -21,8 +21,14 @@ const themeIcon = () => {
         <v-icon>{{ themeIcon() }}</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-main>
+    <v-main class="d-flex align-center justify-center">
       <RouterView />
     </v-main>
   </v-app>
 </template>
+
+<style scoped>
+:deep(main) {
+  height: 100%;
+}
+</style>

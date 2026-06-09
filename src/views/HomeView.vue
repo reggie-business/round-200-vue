@@ -26,10 +26,10 @@ const links = [
 </script>
 
 <template>
-  <v-container class="fill-height d-flex align-center justify-center">
-    <v-row justify="center" align="center">
-      <v-col cols="12" sm="10" md="8" lg="6">
-        <v-card class="pa-8" rounded="xl">
+  <v-container fluid class="d-flex align-center justify-center px-4 py-8">
+    <v-row justify="center" align="center" class="w-100">
+      <v-col cols="12" sm="11" md="10" lg="6" class="d-flex justify-center">
+        <v-card class="pa-8 rounded-xl w-100" style="max-width: 520px;">
           <!-- Profile Section -->
           <div class="text-center mb-8">
             <v-avatar size="120" class="mb-6 d-block mx-auto" color="gradient-primary">
