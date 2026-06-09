@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import LinkButton from '@/components/LinkButton.vue'
 
 const links = [
   {
@@ -43,21 +43,13 @@ const links = [
 
           <!-- Links Section -->
           <div class="d-flex flex-column gap-3">
-            <v-btn
+            <LinkButton
               v-for="link in links"
               :key="link.label"
-              :href="link.url"
-              :target="link.url.startsWith('mailto:') ? undefined : '_blank'"
-              :rel="link.url.startsWith('mailto:') ? undefined : 'noreferrer'"
-              size="large"
-              block
-              class="text-none"
-              variant="flat"
-              color="primary"
-              :prepend-icon="link.icon"
-            >
-              {{ link.label }}
-            </v-btn>
+              :label="link.label"
+              :url="link.url"
+              :icon="link.icon"
+            />
           </div>
         </v-card>
       </v-col>
